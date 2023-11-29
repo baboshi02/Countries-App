@@ -1,6 +1,11 @@
-import "./index.css"
+import "./index.css";
+import { HomePage } from "./Pages/HomePage";
 function App() {
-    return <h1 className="text-red-600 text-center">hello world</h1>;
+    return (
+    <div>
+        <HomePage/>
+    </div>
+);
 }
 
 export default App;
