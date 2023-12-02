@@ -12,7 +12,7 @@ export const CountriesDataProvider=(props)=>{
         const Fil_Countries = countries.filter((d) => d.name.common.toUpperCase().includes(text));
         setFilteredCountries(Fil_Countries)
     };
-    const values={filteredCountries,handleSearch}
+    const values={filteredCountries,handleSearch,countries}
     return(
         <CountriesData.Provider value={values}>
             {props.children}
