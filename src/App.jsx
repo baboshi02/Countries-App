@@ -1,10 +1,17 @@
 import { CountriesDataProvider } from "./context/countriesContext";
 import "./index.css";
-import { HomePage } from "./Pages/HomePage";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+import { HomePage } from "./Pages/Home/HomePage";
+import { HighestCountries } from "./Pages/HighestCountries/highesCountries";
 function App() {
     return (
         <CountriesDataProvider>
-                <HomePage /> 
+                <Router>
+                    <Routes>
+                        <Route path="/" element={<HomePage />}/>
+                        <Route path="/highestcountries" element={<HighestCountries/>}/>
+                    </Routes>
+                </Router>
         </CountriesDataProvider>
     );
 }
