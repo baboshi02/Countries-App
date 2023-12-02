@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const useFetch = (url) => {
-    const [countriesData, setCountriesData] = useState(0);
+    const [countriesData, setCountriesData] = useState([]);
     useEffect(() => {
         fetch(url)
             .then((res) => res.json())
