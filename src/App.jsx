@@ -4,8 +4,7 @@ import { HomePage } from "./Pages/HomePage";
 function App() {
     return (
         <CountriesDataProvider>
-                <HomePage />
-            
+                <HomePage /> 
         </CountriesDataProvider>
     );
 }
