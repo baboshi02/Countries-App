@@ -5,7 +5,7 @@ export const CountryElement = (props) => {
     return (
         <div className="text-SecondaryColor  bg-gray-700 p-7 rounded-sm mt-4 w-[50%] flex flex-col items-center">
             <div>
-                <img src={flags.png} height={10} />
+                <img src={flags.png} height={10} alt={name.common+' Flag'}/>
             </div>
             <h1>Name: {name.common}</h1>
             <h1>Capital:{capital}</h1>

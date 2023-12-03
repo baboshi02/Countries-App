@@ -5,11 +5,11 @@ export const HighestCountries = () => {
     return (
         <div className="text-SecondaryColor">
             <h1 className="text-center  text-6xl">Ten highest Countries</h1>
-            <div className="flex justify-center items-center mt-5">
-                <div className="grid grid-cols-3 bg-slate-700  gap-2 rounded-md p-2 text-gray-300">
+            <div className="flex justify-center items-center mt-5 h-[100vh]">
+                <div className="grid grid-cols-3 bg-slate-700 h-[50%] w-[70%] gap-2 rounded-md p-3 text-gray-300 ">
                     {tenHighestPopulation.map((entry) => (
                         <CountryRow
-                        key={entry}
+                            key={entry}
                             data={entry}
                             totalPopulation={totalPopulation}
                         />
