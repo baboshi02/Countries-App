@@ -9,7 +9,7 @@ export const HighestCountries = () => {
                 <div className="grid grid-cols-3 bg-slate-700 h-[50%] w-[70%] gap-2 rounded-md p-3 text-gray-300 ">
                     {tenHighestPopulation.map((entry) => (
                         <CountryRow
-                            key={entry}
+                            key={entry.country}
                             data={entry}
                             totalPopulation={totalPopulation}
                         />
