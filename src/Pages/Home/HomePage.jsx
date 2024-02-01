@@ -31,6 +31,7 @@ export const HomePage = () => {
                 ))}
             </div>
             {/* To do adding dark and light mode to project */}
+            {/* Sort coutries Alphabetically */}
         </div>
     );
 };
