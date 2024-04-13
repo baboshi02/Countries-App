@@ -16,5 +16,4 @@ npm run dev
 ```
 
 ## Preview
-
-<!-- To DO -->
+[Countries App](https://baboshi02.github.io/Countries-App/)
